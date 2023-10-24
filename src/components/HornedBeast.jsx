@@ -10,7 +10,7 @@ export default function HornedBeast({ title, image_url, description }) {
   return (
     <>
       <h2>{title}</h2>
-      <img src={JSON.stringify(image_url)} onClick={handleFavourites} />
+      <img src={image_url} onClick={handleFavourites} />
       <span>❤️{favourites}</span>
       <p>{description}</p>
     </>
