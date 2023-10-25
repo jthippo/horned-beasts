@@ -1,3 +1,7 @@
 export default function Footer() {
-  return <p>Mike Foster</p>;
+  return (
+    <footer>
+      <p>Mike Foster</p>
+    </footer>
+  );
 }
