@@ -1,5 +1,11 @@
 img {
-  width: 500px;
+  max-width: 250px;
+  max-height: 200px;
+}
+
+.bigBeast {
+  max-width: 90vw;
+  max-height: 80vh;
 }
 
 .modal {
@@ -14,4 +20,25 @@ img {
   position: fixed;
   top: 0;
   left: 0;
+}
+
+.cardHolder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 20vw;
+  height: 50vh;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 2px 16px;
 }

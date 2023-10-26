@@ -13,14 +13,16 @@ export default function HornedBeast({
   }
 
   return (
-    <>
-      <h2>{title}</h2>
+    <div class="card">
       <img
         src={image_url}
         onClick={() => handleShowModal({ title, image_url })}
       />
-      <p>{description}</p>
-      <p onClick={handleFavourites}>❤️{favourites}</p>
-    </>
+      <div class="container">
+        <h2>{title}</h2>
+        <p>{description}</p>
+        <p onClick={handleFavourites}>❤️{favourites}</p>
+      </div>
+    </div>
   );
 }

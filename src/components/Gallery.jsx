@@ -2,7 +2,7 @@ import HornedBeast from "./HornedBeast";
 
 export default function Gallery({ beasts, handleShowModal }) {
   return (
-    <div>
+    <div class="cardHolder">
       {beasts.map((beast) => {
         return (
           <HornedBeast
