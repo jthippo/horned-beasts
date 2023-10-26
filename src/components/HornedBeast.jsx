@@ -1,6 +1,11 @@
 import { useState } from "react";
 
-export default function HornedBeast({ title, image_url, description }) {
+export default function HornedBeast({
+  title,
+  image_url,
+  description,
+  handleShowModal,
+}) {
   const [favourites, setFavourites] = useState(0);
 
   function handleFavourites() {
@@ -10,9 +15,12 @@ export default function HornedBeast({ title, image_url, description }) {
   return (
     <>
       <h2>{title}</h2>
-      <img src={image_url} onClick={handleFavourites} />
-      <span>❤️{favourites}</span>
+      <img
+        src={image_url}
+        onClick={() => handleShowModal({ title, image_url })}
+      />
       <p>{description}</p>
+      <p onClick={handleFavourites}>❤️{favourites}</p>
     </>
   );
 }
