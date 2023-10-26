@@ -9,3 +9,5 @@ So far, I hate this.
 Today, I like this more. Got through the lab without many problems!
 
 ### LAB 3
+
+Back to not understanding anything. Had to copy Tim to get this done.
