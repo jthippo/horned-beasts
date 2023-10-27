@@ -13,12 +13,12 @@ export default function HornedBeast({
   }
 
   return (
-    <div class="card">
+    <div className="card">
       <img
         src={image_url}
         onClick={() => handleShowModal({ title, image_url })}
       />
-      <div class="container">
+      <div className="container">
         <h2>{title}</h2>
         <p>{description}</p>
         <p onClick={handleFavourites}>❤️{favourites}</p>
